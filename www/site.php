@@ -11,7 +11,12 @@
 <body>
     
     <?php
-        echo("Hello World!");
+        $characterName = 'John';
+        $CharacterAge = 35;
+        echo "There once was a man named <br>";
+        echo "He was years old <br>";
+        echo "He really liked the name <br>";
+        echo "But didn't like being <br>"
     ?>
 
 </body>
