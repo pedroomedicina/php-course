@@ -11,12 +11,12 @@
 <body>
     
     <?php
-        $characterName = 'John';
-        $CharacterAge = 35;
-        echo "There once was a man named <br>";
-        echo "He was years old <br>";
-        echo "He really liked the name <br>";
-        echo "But didn't like being <br>"
+
+        $phrase = "To be or not to be"; //string
+        $age = 30; //integer
+        $gpa = 30.3; //float
+        $isMale = false; //boolean
+        echo $phrase;
     ?>
 
 </body>
