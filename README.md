@@ -11,3 +11,4 @@ branches order according to video:
 7.-Mad-libs-Game
 8.-UrlParams
 9.-Post vs Get
+10.-Arrays
