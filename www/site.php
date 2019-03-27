@@ -11,30 +11,30 @@
 <body>
 
         <?php
-          $isMale = false;
-          $isTall = false;
-          //with and operator
-          if($isMale && $isTall){
-            echo "You are a tall male<br>";
-          } else {
-            echo "Etiher you are not male or you are not tall, or both<br>";
-          }
-          //with or operator
-          if($isMale || $isTall){
-            echo "You are male or tall, or both<br>";
-          } else {
-            echo "You aren't either male or tall<br>";
-          }
-          //Using elseif statements
-          if($isMale && $isTall){
-            echo "You are a tall male<br>";
-          } elseif ($isMale && !$isTall){
-            echo "You are a short male<br>";
-          } elseif(!$isMale && $isTall){
-            echo "You aren't male but are tall<br>";
-          }else {
-            echo "You are not male and not tall<br>";
-          }
+          function getMax($num1, $num2){
+            if($num1 > $num2){
+              return $num1;
+            } else {
+              return $num2;
+            }
+          };
+
+          echo getMax(300, 90);
+          echo "<br>";
+
+          //more complex version
+
+          function getMaxT($num1, $num2, $num3){
+            if($num1 >= $num2 && $num1 >= $num3){
+              return $num1;
+            } elseif($num2 >= $num1 && $num2 >= $num3){
+              return $num2;
+            }else {
+              return $num3;
+            }
+          };
+
+          echo getMaxT(300, 90, 400);
         ?>
 </body>
 </html>
