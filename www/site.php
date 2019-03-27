@@ -10,13 +10,20 @@
 </head>
 <body>
     
-    <?php
+    <?php //this all are tests for different functions
+        $phrase = "Giraffe Academy";
+        echo strtolower($phrase);
+        echo "<br>";
+        echo strtoupper($phrase);
+        echo "<br>";
+        echo strlen($phrase);
+        echo "<br>";
+        echo ("$phrase[0]<br>");
+        $phrase[0] = "B";
+        echo ("$phrase<br>");
+        echo str_replace("ffe", "Panda", $phrase);
+        echo substr($phrase, 8, 3);
 
-        $phrase = "To be or not to be"; //string
-        $age = 30; //integer
-        $gpa = 30.3; //float
-        $isMale = false; //boolean
-        echo $phrase;
     ?>
 
 </body>
