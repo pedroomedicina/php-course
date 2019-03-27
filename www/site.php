@@ -9,8 +9,15 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-  <?php include "header.html" ?>
-  <p>Hello World!</p>
-  <?php include "footer.html" ?>
+  <?php
+    $title = "My First Post";
+    $author = "Mike";
+    $wordCount = 400;
+    include "article-header.php";
+    echo "<br>";
+    //another use
+    include "useful-tools.php";
+    echo $feetInMile;
+  ?>
 </body>
 </html>
