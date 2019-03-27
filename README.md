@@ -2,7 +2,7 @@
 Personal project built following a freeCodeCamp Tutorial: https://youtu.be/OK_JCtrrv-c
 
 branches order according to video:
-⌨️ 1. (0:00) Introduction
+⌨️ 1. (0:00) Introduction<br>
 ⌨️ 2. (1:56) Windows Installation
 ⌨️ 3. (7:32) Choosing a Text Editor
 ⌨️ 4. (11:06) Hello World & Setup
