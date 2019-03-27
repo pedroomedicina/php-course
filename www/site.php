@@ -9,14 +9,19 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-        <form action="site.php" method="post">
+     <!--   <form action="site.php" method="post">
           <input type="text" name="student">
           <input type="submit">
-        </form>
+        </form> -->
 
         <?php
-          $grades = array("Jim"=>"A+","Pam"=>"A+", "Oscar"=>"C+");
-          echo $grades[$_POST["student"]];
+          function sayHi($name, $age){
+            echo "Hello $name, you are $age years old. <br>";
+          }
+
+          sayHi("Tom",20);
+          sayHi("Dave",13);
+          sayHi("Oscar",55);
         ?>
 </body>
 </html>
