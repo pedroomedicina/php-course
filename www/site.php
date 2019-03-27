@@ -9,32 +9,29 @@
     <script src="main.js"></script> -->
 </head>
 <body>
+  <form action="site.php" method="post">
+    First num: <input type="number" step="0.001" name="num1"> <br>
+    OP: <input type="text" name="op"> <br>
+    Second Num: <input type="number" name="num2"> <br>
+    <input type="submit">
+  </form>
 
-        <?php
-          function getMax($num1, $num2){
-            if($num1 > $num2){
-              return $num1;
-            } else {
-              return $num2;
-            }
-          };
+  <?php
+    $num1 = $_POST["num1"];
+    $num2 = $_POST["num2"];
+    $op = $_POST["op"];
 
-          echo getMax(300, 90);
-          echo "<br>";
-
-          //more complex version
-
-          function getMaxT($num1, $num2, $num3){
-            if($num1 >= $num2 && $num1 >= $num3){
-              return $num1;
-            } elseif($num2 >= $num1 && $num2 >= $num3){
-              return $num2;
-            }else {
-              return $num3;
-            }
-          };
-
-          echo getMaxT(300, 90, 400);
-        ?>
+    if($op == "+"){
+      echo $num1 + $num2;
+    } elseif($op == "-"){
+      echo $num1 - $num2;
+    } elseif($op == "*"){
+      echo $num1 * $num2;
+    } elseif($op == "/"){
+      echo $num1 / $num2;
+    } else {
+      echo "Invalid Operator";
+    }
+  ?>
 </body>
 </html>
