@@ -14,3 +14,4 @@ branches order according to video:
 10.-Arrays
 11.-CheckBoxes
 12.-AssociativeArrays
+13.-functions
