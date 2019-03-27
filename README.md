@@ -12,3 +12,5 @@ branches order according to video:
 8.-UrlParams
 9.-Post vs Get
 10.-Arrays
+11.-CheckBoxes
+12.-AssociativeArrays
