@@ -10,14 +10,26 @@
 </head>
 <body>
   <?php
-    $title = "My First Post";
-    $author = "Mike";
-    $wordCount = 400;
-    include "article-header.php";
-    echo "<br>";
-    //another use
-    include "useful-tools.php";
-    echo $feetInMile;
+    class Book { //here we have defined a class
+      var $title;
+      var $author;
+      var $pages;
+    }
+
+    //here we have an object a.k.a. class instance
+    $book1 = new Book; 
+    $book1->title = "Harry Potter";
+    $book1->author = "JK Rowlings";
+    $book1->pages = 400;
+
+    echo "$book1->author <br>";
+
+    $book2 = new Book; 
+    $book2->title = "Lord Of the Rings";
+    $book2->author = "Tolkien";
+    $book2->pages = 700;
+
+    echo "$book2->author <br>";
   ?>
 </body>
 </html>
