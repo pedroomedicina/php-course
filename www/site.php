@@ -9,28 +9,8 @@
     <script src="main.js"></script> -->
 </head>
 <body>
- <!-- <form action="site.php" method="post">
-    What was your grade?<br>
-    <input type="text" name="grade">
-    <input type='submit'>
-  </form> -->
-  <?php
-    //a while loop
-    $index = 1;
-    while($index <= 5){
-      echo "$index <br>";
-      $index++;
-    }
-    //equivalent for loop
-    for($i= 1; $i <= 5; $i++){
-      echo "$i <br>";
-    }
-    //a way to use for loops
-    $luckyNumbers = array(4, 8, 14, 16, 23, 42);
-    for ($i = 0; $i <= count($luckyNumbers); $i++){
-      echo "$luckyNumbers[$i] <br>";
-    }
-
-  ?>
+  <?php include "header.html" ?>
+  <p>Hello World!</p>
+  <?php include "footer.html" ?>
 </body>
 </html>
