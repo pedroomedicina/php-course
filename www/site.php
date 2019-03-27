@@ -9,13 +9,13 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-        <form action="site.php" method="get">
-          Name: <input type="text" name="name"> <br>
+        <form action="site.php" method="post">
+          Password: <input type="text" name="password"> <br>
           <input type="submit">
         </form>
 
         <?php
-        echo $_GET["name"];
+        echo $_POST["password"];
         ?>
 
 </body>
