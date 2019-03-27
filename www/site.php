@@ -9,14 +9,14 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-        <form action="site.php" method="post">
-          Password: <input type="text" name="password"> <br>
-          <input type="submit">
-        </form>
-
-        <?php
-        echo $_POST["password"];
-        ?>
-
+  <?php 
+    $friends = array('Kevin','Karen','Oscar','Jim');
+    $friends[10] = "Dwight";
+    echo $friends[10];
+    echo '<br>';
+    echo count($friends); //counts 5 elements 
+    //although we are adding a tenth position
+    //to the array
+  ?>
 </body>
 </html>
