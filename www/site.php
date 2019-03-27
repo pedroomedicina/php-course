@@ -10,20 +10,59 @@
 </head>
 <body>
     
-    <?php //this all are tests for different functions
-        $phrase = "Giraffe Academy";
-        echo strtolower($phrase);
-        echo "<br>";
-        echo strtoupper($phrase);
-        echo "<br>";
-        echo strlen($phrase);
-        echo "<br>";
-        echo ("$phrase[0]<br>");
-        $phrase[0] = "B";
-        echo ("$phrase<br>");
-        echo str_replace("ffe", "Panda", $phrase);
-        echo substr($phrase, 8, 3);
+    <?php
+    echo 40; //positive int
+    echo '<br>';
+    echo -40; //negative int
+    echo '<br>';
+    echo -40.864; //negative floating point number
+    echo '<br>';
+    //perform arithmetics
+    echo 9 + 5;
+    echo '<br>';
+    echo 9 - 5;
+    echo '<br>';
+    echo 9 / 5;
+    echo '<br>';
+    echo 9 * 5.7;
+    echo '<br>';
+    echo (4 + 5) * 10;
+    echo '<br>';
+    //even modulus
+    echo 10 % 3; //getting the remainder printed
+    echo '<br>';
+    
+    $num = 10;
+    echo $num;
+    echo '<br>';
+    $numm++;
+    echo $num;
+    echo '<br>';
+    $numm--;
+    echo $num;
+    echo '<br>';
+    $num += 25;
+    $num *= 20;
+    $num -= 120;
+    echo $num;
+    echo '<br>';
 
+    echo abs(-400); //absolute value
+    echo '<br>';
+    echo pow(2, 4); //power
+    echo '<br>';
+    echo sqrt(144); //square root
+    echo '<br>';
+    echo max(2, 10); //max between 2 num
+    echo '<br>';
+    echo min(2, 10); //min between 2 num
+    echo '<br>';
+    echo round (2.3);
+    echo '<br>';;
+    echo ceil (3.3); //round up
+    echo '<br>';;
+    echo floor (3.3); //round down
+    //dozens and dozens of math functions
     ?>
 
 </body>
