@@ -15,20 +15,22 @@
     <input type='submit'>
   </form> -->
   <?php
-
+    //a while loop
     $index = 1;
     while($index <= 5){
       echo "$index <br>";
       $index++;
     }
+    //equivalent for loop
+    for($i= 1; $i <= 5; $i++){
+      echo "$i <br>";
+    }
+    //a way to use for loops
+    $luckyNumbers = array(4, 8, 14, 16, 23, 42);
+    for ($i = 0; $i <= count($luckyNumbers); $i++){
+      echo "$luckyNumbers[$i] <br>";
+    }
 
-    //be aware of infinite loops
-
-    $index = 6;
-    do{
-      echo "$index <br>";
-      $index++;
-    } while($index <=5);
   ?>
 </body>
 </html>
