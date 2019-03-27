@@ -20,6 +20,5 @@
           $fruits = $_POST["fruits"];
           echo $fruits[1];
         ?>
-
 </body>
 </html>
