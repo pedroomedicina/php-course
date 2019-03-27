@@ -9,14 +9,21 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-        <form action="site.php" method="post">
+      <!--  <form action="site.php" method="post">
           <input type="text" name="student">
           <input type="submit">
-        </form>
+        </form> -->
 
         <?php
-          $grades = array("Jim"=>"A+","Pam"=>"A+", "Oscar"=>"C+");
-          echo $grades[$_POST["student"]];
+          function cube($num){
+            return $num * $num * $num;
+            //the following code will never be excecuted
+            //because of return statement.
+            echo "Hello World";
+          }
+
+          $cubeResult = cube(4);
+          echo $cubeResult;
         ?>
 </body>
 </html>
