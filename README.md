@@ -8,3 +8,4 @@ branches order according to video:
 4.-Working w. numbers
 5.-Getting user input
 6.-Basic Calculator
+7.-Mad-libs-Game
