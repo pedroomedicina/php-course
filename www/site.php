@@ -9,14 +9,15 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-  <?php 
-    $friends = array('Kevin','Karen','Oscar','Jim');
-    $friends[10] = "Dwight";
-    echo $friends[10];
-    echo '<br>';
-    echo count($friends); //counts 5 elements 
-    //although we are adding a tenth position
-    //to the array
-  ?>
+        <form action="site.php" method="post">
+          <input type="text" name="student">
+          <input type="submit">
+        </form>
+
+        <?php
+          $grades = array("Jim"=>"A+","Pam"=>"A+", "Oscar"=>"C+");
+          echo $grades[$_POST["student"]];
+        ?>
+
 </body>
 </html>
