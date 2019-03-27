@@ -9,19 +9,32 @@
     <script src="main.js"></script> -->
 </head>
 <body>
-     <!--   <form action="site.php" method="post">
-          <input type="text" name="student">
-          <input type="submit">
-        </form> -->
 
         <?php
-          function sayHi($name, $age){
-            echo "Hello $name, you are $age years old. <br>";
+          $isMale = false;
+          $isTall = false;
+          //with and operator
+          if($isMale && $isTall){
+            echo "You are a tall male<br>";
+          } else {
+            echo "Etiher you are not male or you are not tall, or both<br>";
           }
-
-          sayHi("Tom",20);
-          sayHi("Dave",13);
-          sayHi("Oscar",55);
+          //with or operator
+          if($isMale || $isTall){
+            echo "You are male or tall, or both<br>";
+          } else {
+            echo "You aren't either male or tall<br>";
+          }
+          //Using elseif statements
+          if($isMale && $isTall){
+            echo "You are a tall male<br>";
+          } elseif ($isMale && !$isTall){
+            echo "You are a short male<br>";
+          } elseif(!$isMale && $isTall){
+            echo "You aren't male but are tall<br>";
+          }else {
+            echo "You are not male and not tall<br>";
+          }
         ?>
 </body>
 </html>
