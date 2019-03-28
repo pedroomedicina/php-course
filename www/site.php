@@ -10,35 +10,36 @@
 </head>
 <body>
   <?php
-    class Movie {
-      public $title; //public & var are interchangeable
-      private $rating; //any code outside the class, isn't gonna be able to reach this directly.
+    class Chef {
+      function makeChicken(){
+        echo "The chef makes chicken <br>";
+      }
+      function makeSalad(){
+        echo "The chef makes salad <br>";
+      }
+      function makeSpecialDish(){
+        echo "The chef makes bbq ribs <br>";
+      }
+    }
 
-      function __construct($title, $rating){
-        $this->title = $title;
-        $this->setRating($rating);
+    class ItalianChef extends Chef {
+
+      function makePasta(){
+        echo "The chef makes pasta <br>";
       }
 
-      function getRating(){
-        return $this->rating;
-      }
-
-      function setRating($rating){
-        if($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR"){
-          $this->rating = $rating;
-        }else{
-          $this->rating = "NR";
-        }
+      function makeSpecialDish(){
+        echo "The chef makes chicken parm<br>";
       }
 
     }
 
-    $avengers = new Movie("Avengers", "Dog");
-      //possible ratings: G, PG, PG-13, R, NR
-    
-    $avengers->setRating("Dog");
-    echo $avengers->getRating();
-  
+    $chef = new Chef();
+    $chef->makeSpecialDish();
+
+    $italianChef = new ItalianChef();
+    $italianChef->makeSpecialDish();
+
   ?>
 </body>
 </html>
