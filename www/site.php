@@ -10,26 +10,32 @@
 </head>
 <body>
   <?php
-    class Book { //here we have defined a class
-      var $title;
-      var $author;
-      var $pages;
+    class Student { //here we have defined a class
+      var $name;
+      var $major;
+      var $gpa;
 
-      function __construct($aTitle, $aAuthor, $aPages){
-        $this->title = $aTitle;
-        $this->author = $aAuthor;
-        $this->pages = $aPages;
+      function __construct($name, $major, $gpa){
+        $this->name = $name;
+        $this->major = $major;
+        $this->gpa = $gpa;
       }
+
+      function hasHonors(){
+        if($this->gpa >= 3.5){
+          return "true";
+        } //for practical reasons, we pass strings.
+        return "false";
+      }
+
     }
 
-    //here we have an object a.k.a. class instance
-    $book1 = new Book("Harry Potter", "JK Rowlings", 400);
+    $student1 = new Student("Jim", "Business", 2.8);
+    $student2 = new Student("Pam", "Art", 3.6);
 
-    echo "$book1->title <br>";
-
-    $book2 = new Book("Lord Of the Rings", "Tolkien", 700);
-
-    echo "$book2->author <br>";
+    echo $student1->hasHonors();
+    echo "<br>";
+    echo $student2->hasHonors();
   ?>
 </body>
 </html>
