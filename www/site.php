@@ -10,32 +10,35 @@
 </head>
 <body>
   <?php
-    class Student { //here we have defined a class
-      var $name;
-      var $major;
-      var $gpa;
+    class Movie {
+      public $title; //public & var are interchangeable
+      private $rating; //any code outside the class, isn't gonna be able to reach this directly.
 
-      function __construct($name, $major, $gpa){
-        $this->name = $name;
-        $this->major = $major;
-        $this->gpa = $gpa;
+      function __construct($title, $rating){
+        $this->title = $title;
+        $this->setRating($rating);
       }
 
-      function hasHonors(){
-        if($this->gpa >= 3.5){
-          return "true";
-        } //for practical reasons, we pass strings.
-        return "false";
+      function getRating(){
+        return $this->rating;
+      }
+
+      function setRating($rating){
+        if($rating == "G" || $rating == "PG" || $rating == "PG-13" || $rating == "R" || $rating == "NR"){
+          $this->rating = $rating;
+        }else{
+          $this->rating = "NR";
+        }
       }
 
     }
 
-    $student1 = new Student("Jim", "Business", 2.8);
-    $student2 = new Student("Pam", "Art", 3.6);
-
-    echo $student1->hasHonors();
-    echo "<br>";
-    echo $student2->hasHonors();
+    $avengers = new Movie("Avengers", "Dog");
+      //possible ratings: G, PG, PG-13, R, NR
+    
+    $avengers->setRating("Dog");
+    echo $avengers->getRating();
+  
   ?>
 </body>
 </html>
